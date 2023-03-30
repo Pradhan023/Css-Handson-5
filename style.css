@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(254, 254, 85);
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.li
+{
+    display: flex;
+    margin: 30px 30px 0 30px;
+}
+#first
+{
+    border: 1px solid rgb(18, 80, 173);
+    background-color: rgb(18, 80, 173);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    animation: sk 3s infinite alternate;
+}
+@keyframes sk
+{
+    0%{
+        transform: skewX(-20deg);
+    }
+    100%
+    {
+        transform: skewX(20deg);
+    }
+}
+
+#second
+{
+    border: 1px solid rgb(190, 118, 190);
+    background-color: rgb(190, 118, 190);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    animation: sk1 3s infinite alternate;
+}
+@keyframes sk1
+{
+    0%{
+        transform: skewY(20deg);
+    }
+    100%
+    {
+        transform: skewY(-20deg);
+    }
+}
+
+#third
+{
+    border: 1px solid rgb(78, 127, 219);
+    background-color: rgb(78, 127, 219);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    animation: rotate 3s infinite normal;
+}
+@keyframes rotate
+{
+    0%{
+        transform: rotate(-180deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+#fourth
+{
+    border: 1px solid rgb(78, 127, 219);
+    background-color: rgb(78, 127, 219);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    animation: scale 3s infinite alternate;
+}
+@keyframes scale
+{
+    0%{
+        transform: scaleY(1);
+    }
+    100%
+    {
+        transform: scaleY(0.5);
+    }
+}
+#fourth1
+{
+    border: 1px solid rgb(161, 52, 52);
+    background-color: rgb(161, 52, 52);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    animation: scale1 3s infinite alternate;
+}
+@keyframes scale1
+{
+    0%{
+        transform: scaleX(1);
+    }
+    100%
+    {
+        transform: scaleX(0.5);
+    }
+}
+#fourth2
+{
+    border: 1px solid rgb(32, 180, 32);
+    background-color: rgb(32, 180, 32);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    animation: rotate1 3s infinite alternate;
+}
+@keyframes rotate1
+{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%
+    {
+        transform: rotate(190deg);
+    }
+}
+a
+{
+    font-size: xx-large;
+}
